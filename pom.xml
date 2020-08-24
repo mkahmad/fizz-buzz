@@ -5,11 +5,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.example.ibm</groupId>
-	<artifactId>fizz-buzz-test</artifactId>
+	<groupId>uk.me.kamran.ibm</groupId>
+	<artifactId>fizz-buzz</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>fizz-buzz-test</name>
+	<name>fizz-buzz-tests</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
