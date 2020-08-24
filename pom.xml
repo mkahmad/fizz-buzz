@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>uk.me.kamran.ibm</groupId>
+	<groupId>com.example.ibm</groupId>
 	<artifactId>fizz-buzz</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -19,6 +19,7 @@
 		<junit.version>5.5.2</junit.version>
 		<maven.compiler.version>3.7.0</maven.compiler.version>
 		<maven.surefire.version>2.22.2</maven.surefire.version>
+		<maven.jar.plugin.version>3.0.2</maven.jar.plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -42,6 +43,19 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Build an executable JAR -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${maven.jar.plugin.version}</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.example.ibm.fizz_buzz_test.FizzBuzzApp</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
